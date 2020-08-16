@@ -35,14 +35,14 @@ handle_exit_code() {
 
 install_tensorflow() {
   # Install TensorFlow 2.2.
-  echo "Installing TensorFlow 2.2"
-  pip3 install --upgrade tensorflow==2.2.0
-  local exit_code=$?
-  handle_exit_code ${exit_code} "Unable to install Tensorflow 2.2."
-  echo "Installing TensorFlow 2.2 for GPU"
-  pip3 install --upgrade tensorflow-gpu==2.2.0
-  local exit_code=$?
-  handle_exit_code ${exit_code} "Unable to install Tensorflow for GPU 2.2.0."
+  echo "Installing TensorFlow 2.3"
+  #   pip3 install --upgrade tensorflow==2.2.0
+  #   local exit_code=$?
+  #   handle_exit_code ${exit_code} "Unable to install Tensorflow 2.2."
+  #   echo "Installing TensorFlow 2.2 for GPU"
+  #   pip3 install --upgrade tensorflow-gpu==2.2.0
+  #   local exit_code=$?
+  #   handle_exit_code ${exit_code} "Unable to install Tensorflow for GPU 2.2.0."
 }
 
 install_tf_slim() {
